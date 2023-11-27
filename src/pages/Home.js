@@ -8,6 +8,8 @@ const Home = () => {
 const [exercises, setExercises] = useState([]);
 const [bodyPart, setBodyPart] = useState('all');
 
+console.log(bodyPart)
+
 
   return (
     <Box>
@@ -19,7 +21,7 @@ const [bodyPart, setBodyPart] = useState('all');
       <Exercises
       setExercises={setExercises}
       bodyPart={bodyPart} 
-      setBodyPart={setBodyPart}/>
+      exercises={exercises}/>
     </Box>
   )
 }
